@@ -173,7 +173,7 @@ header {
     padding-top: 200px;
     padding-bottom: 200px;
 }
-.solution-text {
+.solution__text {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -182,7 +182,7 @@ header {
     color: var(--other-text-color);
     margin-bottom: 30px;
 }
-.solution-button {
+.solution__button {
     display: inline-block;
     padding: 10px 32px;
     min-width: 216px;
@@ -200,25 +200,25 @@ header {
     transition: background-color 250ms var(--time-function);
 
 }
-.solution-button:hover,
-.solution-button:focus {
+.solution__button:hover,
+.solution__button:focus {
     background-color: #188ce8;
 }
 
 /*Особливості*/
 .features {
+    padding-bottom: 0;
+}
+.features__list {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
-.feature {
-    padding-bottom: 0;
-}
-.features-item {
+.features__item {
     width: 270px;
 }
 
-.group-icon {
+.features__icon {
     display: flex;
     width: 270px;
     height: 120px;
@@ -229,7 +229,7 @@ header {
     background-color: #F5F4FA;
    
 }
-.features-title {
+.features__title {
     width: 270px;
     height: 16px;
     font-weight: 700;
@@ -239,7 +239,7 @@ header {
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.features-text {
+.features__text {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -247,11 +247,11 @@ header {
 }
 
 /*Чим ми займаємось*/
-.what-we-do {
+.what-we-do__list {
     display: flex;
     flex-direction: row;
 }
-.what-we-do-text {
+.what-we-do__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -259,14 +259,14 @@ header {
     margin-bottom: 50px;
     }
 
-.what-we-do .item:not(:last-child) {
+.what-we-do__item:not(:last-child) {
     margin-right: 30px;
 }
-.work-item {
+.work {
     position: relative;
 }
 
-.thumb-work {
+.work__example {
     position: absolute;
     bottom: 0;
     display: flex;
@@ -274,14 +274,14 @@ header {
     align-items: center;
 }
 
-.thumb-work::before {
+.work__example::before {
     content: "";
     width: 370px;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.work-title {
+.work__title {
     position: absolute;
     font-family: 'Roboto';
     font-style: normal;
@@ -298,11 +298,8 @@ header {
 .our-team {
     background: #F5F4FA;
 }
-.team {
-    display: flex;
-    flex-direction: row;
-}
-.team-title {
+
+.our-team__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -310,7 +307,11 @@ header {
     text-align: center;
     margin-bottom: 50px;
 }
-.team-item {
+.team {
+    display: flex;
+    flex-direction: row;
+}
+.team__item {
     width: 270px;
     background: #FFFFFF;
     box-shadow: 
@@ -319,14 +320,14 @@ header {
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.team-item:not(:last-child) {
+.team__item:not(:last-child) {
     margin-right: 30px;
 }
-.team-box {
+.team__box {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.team-member {
+.team__member {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -334,7 +335,7 @@ header {
     text-align: center;
     margin-bottom: 10px;
 }
-.team-text {
+.team__text {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
@@ -373,7 +374,7 @@ header {
 }
 
 /*Постійні клієнти*/
-.clients-title {
+.clients__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -381,14 +382,14 @@ header {
     margin-bottom: 50px;
 }
 
-.client-list {
+.client__list {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 30px;
 }
 
-.client-link {
+.client__link {
     display: flex;
     width: 170px;
     height: 92px;
@@ -399,14 +400,14 @@ header {
     color: #afb1b8;
   }
 
-  .client-link:hover,
-  .client-link:focus {
+  .client__link:hover,
+  .client__link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
     transition: border-color var(--time-function);
   }
 
-  .client-icon {
+  .client__icon {
       fill: currentColor;
       transition: 250ms var(--time-function);
   }
