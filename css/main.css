@@ -168,9 +168,7 @@ img {
   border-radius: 4px;
   color: #afb1b8;
 }
-
-.client__link:hover,
-.client__link:focus {
+.client__link:hover, .client__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
   -webkit-transition: border-color var(--time-function);
@@ -287,6 +285,16 @@ img {
   padding-bottom: 60px;
 }
 
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+}
+
 .logo__basic {
   color: var(--accent-color);
   font-family: "Raleway";
@@ -303,13 +311,16 @@ img {
   color: var(--other-text-color);
 }
 
-.footer__adr {
+.footer__addr {
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
   color: var(--other-text-color);
   -webkit-transition: color 250ms var(--time-function);
   transition: color 250ms var(--time-function);
+}
+.footer__addr:hover, .footer__addr:focus {
+  color: var(--accent-color);
 }
 
 .footer__link {
@@ -321,26 +332,12 @@ img {
   -webkit-transition: color 250ms var(--time-function);
   transition: color 250ms var(--time-function);
 }
-
-.footer__address:hover,
-.footer__address:focus,
-.footer__link:hover,
-.footer__link:focus {
+.footer__link:hover, .footer__link:focus {
   color: var(--accent-color);
 }
 
 .footer_address:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 70px;
 }
 
 .join__title,
@@ -385,9 +382,7 @@ img {
   -webkit-transition: background-color 250ms var(--time-function);
   transition: background-color 250ms var(--time-function);
 }
-
-.join__link:hover,
-.join__link:focus {
+.join__link:hover, .join__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -492,7 +487,6 @@ img {
   border-radius: 4px;
   outline: none;
 }
-
 .form__input:focus {
   border-color: var(--accent-color);
 }
@@ -522,7 +516,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
-
 .form__textarea:focus {
   border-color: var(--accent-color);
 }
@@ -617,6 +610,9 @@ img {
   -webkit-transition: color 250ms var(--time-function);
   transition: color 250ms var(--time-function);
 }
+.nav__link:hover, .nav__link:focus {
+  color: var(--accent-color);
+}
 
 .nav__link--current {
   color: var(--accent-color);
@@ -662,6 +658,9 @@ img {
   -webkit-transition: color 250ms var(--time-function);
   transition: color 250ms var(--time-function);
 }
+.address__link:hover, .address__link:focus {
+  color: var(--accent-color);
+}
 
 .contact__icon {
   display: -webkit-box;
@@ -674,13 +673,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   fill: currentColor;
-}
-
-.nav__link:hover,
-.nav__link:focus,
-.address__link:hover,
-.address__link:focus {
-  color: var(--accent-color);
 }
 
 header {
@@ -754,7 +746,6 @@ header {
   transition: transform 250ms var(--time-function), fill 250ms var(--time-function);
   transition: transform 250ms var(--time-function), fill 250ms var(--time-function), -webkit-transform 250ms var(--time-function);
 }
-
 .modal__button:hover {
   fill: var(--accent-color);
 }
@@ -904,9 +895,7 @@ header {
   -webkit-transition: background-color 250ms var(--time-function);
   transition: background-color 250ms var(--time-function);
 }
-
-.netlink:hover,
-.netlink:focus {
+.netlink:hover, .netlink:focus {
   color: #FFFFFF;
   background-color: var(--accent-color);
 }

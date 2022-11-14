@@ -36,10 +36,10 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
-}
-
-.form__input:focus {
-    border-color: var(--accent-color);
+    
+    &:focus {
+            border-color: var(--accent-color);
+        }
 }
 
 .form__icon {
@@ -65,10 +65,9 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-}
-
-.form__textarea:focus {
-    border-color: var(--accent-color);
+&:focus {
+        border-color: var(--accent-color);
+    }
 }
 
 .form__link:active,

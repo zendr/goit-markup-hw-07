@@ -53,11 +53,10 @@
     border-radius: 50%;
     cursor: pointer;
     transition: transform 250ms var(--time-function),
-        fill 250ms var(--time-function)
-}
-
-.modal__button:hover {
-    fill: var(--accent-color);
+        fill 250ms var(--time-function);
+    &:hover {
+            fill: var(--accent-color);
+        }
 }
 
 .modal__svg {

@@ -45,6 +45,10 @@
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     transition: color 250ms var(--time-function);
+&:hover,
+&:focus {
+        color: var(--accent-color);
+    }
 }
 
 .nav__link--current {
@@ -81,6 +85,10 @@
     justify-content: center;
     align-items: center;
     transition: color 250ms var(--time-function);
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .contact__icon {
@@ -88,13 +96,6 @@
     justify-content: center;
     align-items: center;
     fill: currentColor;
-}
-
-.nav__link:hover,
-.nav__link:focus,
-.address__link:hover,
-.address__link:focus {
-    color: var(--accent-color);
 }
 
 header {

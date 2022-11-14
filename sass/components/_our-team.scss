@@ -70,12 +70,11 @@
     color: #afb1b8;
     background-color: #FFFFFF;
     transition: background-color 250ms var(--time-function);
-}
-
-.netlink:hover,
-.netlink:focus {
-    color: #FFFFFF;
-    background-color: var(--accent-color);
+    &:hover,
+    &:focus {
+            color: #FFFFFF;
+            background-color: var(--accent-color);
+        }
 }
 
 .netlink__icon {
